@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin version="0.2">
-    <title xml:lang="ko">XEDITION</title>
+    <title xml:lang="ko">YEDITION</title>
     <version>1.0</version>
     <date>2015-04-08</date>
     <author email_address="developers@xpressengine.com" link="https://www.xpressengine.com/">
         <name xml:lang="ko">NAVER</name>
     </author>
+	<author email_address="sjosjo1204@gmail.com" link="https://github.com/SPICYJO">
+		<name xml:lang="en">Seungwoo Jo</name>
+		<name xml:lang="ko">Seungwoo Jo</name>
+	</author>
     <license>GPL v2</license>
     <extra_vars>
     </extra_vars>
