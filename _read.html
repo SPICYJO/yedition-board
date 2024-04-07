@@ -51,6 +51,7 @@
 	<!-- /READ BODY -->
 	<!-- READ FOOTER -->
 	<div class="read_footer">
+		<!--@if(($module_info->use_share_buttons ?? 'N') == 'Y')-->
 		<div class="sns">
 		    <ul>
 		    <li>
@@ -81,6 +82,7 @@
 				});
 			</script>
 		</div>
+		<!--@end-->
 		<div class="vote">
 			<ul>
 				<li>
