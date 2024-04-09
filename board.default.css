@@ -450,6 +450,7 @@
 .read_header {
 	position: relative;
 	margin-bottom:20px;
+	padding: 8px;
 }
 .read_header h1 {
 	width: 90%;
@@ -512,6 +513,7 @@
 }
 .read_footer {
 	overflow: hidden;
+	padding: 8px;
 }
 .read_footer .fileList {
 	margin: 15px 0;
