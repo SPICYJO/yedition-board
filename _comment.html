@@ -6,8 +6,8 @@
 	<ul cond="$oDocument->getCommentcount()" class="fbList">
 		<li loop="$oDocument->getComments()=>$key,$comment" class="fbItem"|cond="!$comment->get('depth')" class="fbItem indent indent{($comment->get('depth'))}"|cond="$comment->get('depth')" id="comment_{$comment->comment_srl}">
 			<div class="fbMeta">
-				<img cond="$comment->getProfileImage()" src="{$comment->getProfileImage()}" alt="Profile" class="profile" />
-				<span cond="!$comment->getProfileImage()" class="profile"></span>
+<!--				<img cond="$comment->getProfileImage()" src="{$comment->getProfileImage()}" alt="Profile" class="profile" />-->
+<!--				<span cond="!$comment->getProfileImage()" class="profile"></span>-->
 				<h3 class="author">
 					<a cond="$comment->member_srl <= 0 && $comment->homepage" href="{$comment->getHomepageUrl()}">{$comment->getNickName()}</a>
 					<strong cond="$comment->member_srl <= 0 && !$comment->homepage">{$comment->getNickName()}</strong>
@@ -54,9 +54,9 @@
 		</li>
 	</ul>
     <div cond="$oDocument->comment_page_navigation" class="pagination">
-        <a href="{getUrl('cpage',1)}#comment" class="direction prev"><span></span><span></span> {$lang->first_page}</a> 
+        <a href="{getUrl('cpage',1)}#comment" class="direction prev"><span></span><span></span> {$lang->first_page}</a>
         <block loop="$page_no=$oDocument->comment_page_navigation->getNextPage()">
-			<strong cond="$cpage==$page_no">{$page_no}</strong> 
+			<strong cond="$cpage==$page_no">{$page_no}</strong>
 			<a cond="$cpage!=$page_no" href="{getUrl('cpage',$page_no)}#comment">{$page_no}</a>
         </block>
         <a href="{getUrl('cpage',$oDocument->comment_page_navigation->last_page)}#comment" class="direction next">{$lang->last_page} <span></span><span></span></a>
@@ -67,7 +67,7 @@
 		<input type="hidden" name="comment_srl" value="" />
         <input type="hidden" name="content" value="" />
         {$oDocument->getCommentEditor()}
-        
+
 		<div class="write_author">
 			<span class="item" cond="!$is_logged">
 				<label for="userName" class="iLabel">{$lang->writer}</label>

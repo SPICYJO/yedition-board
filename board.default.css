@@ -702,9 +702,13 @@
 	background: url(icoIndent.gif) no-repeat;
 }
 .feedback .fbMeta {
-	float: left;
-	width: 184px;
-	padding: 0 0 0 6px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*float: left;*/
+	/*width: 184px;*/
+	/*padding: 0 0 0 6px;*/
+	padding: 0 8px;
 }
 .feedback .fbMeta .profile {
 	float: left;
@@ -733,7 +737,8 @@
 	color: #8e8e8e;
 }
 .feedback .xe_content {
-	margin: 0 0 0 200px;
+	/*margin: 0 0 0 200px;*/
+	padding: 8px;
 	color: #666;
 	line-height: 1.5;
 }
